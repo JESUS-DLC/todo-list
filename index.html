@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/dlcicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/laptop.css" media="(min-width:930px)">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+    <div class="back hidden">
+    </div>
+
+    <form action="" class="edit-form edit-active hidden">
+        <h2>Editar</h2>
+        <input type="hidden" class="edit__id">
+        <label for="">Titulo</label>
+        <input type="text" class="edit__title" placeholder="ingresa un titulo">
+        <label for="">Descripción</label>
+        <input type="text" class="edit__description" placeholder="ingresa una descripcion">
+        <input type="button" value="Editar" id="edit">
+    </form>
+
+    <main>
+        <header>
+            <p>JesusDLC TODO</p>
+        </header>
+
+        <form action="" class="filter-form">
+            <h2 class="filter__title">Filtros</h2>
+            <input type="radio" name="opcion" value="all" id="all" checked>
+            <label for="opcion1">Todas</label>
+
+            <input type="radio" name="opcion" value="true" id="completed">
+            <label for="opcion2">Completas</label>
+
+            <input type="radio" name="opcion" value="false" id="incomplete">
+            <label for="opcion3">Inompletas</label>
+            <input type="button" value="Buscar" id="filter">
+        </form>
+
+        <form action="" class="add-form">
+            <label for="">Titulo:</label>
+            <input type="text" class="add__title" placeholder="ingresa un titulo">
+            <label for="">Descripción:</label>
+            <input type="text" class="add__description" placeholder="ingresa una descripción">
+            <input type="button" value="Agregar" id="add">
+        </form>
+
+        <section class="todo-container">
+            <table class="todo-table">
+                <thead>
+                    <th>Titulo</th>
+                    <th>Descripción</th>
+                    <th>Completado</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody class="todo__content">            
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

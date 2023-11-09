@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+p,label,input,button,h2,td,th{
+    font-size: 2.2rem;
+}
+
+header{
+    padding: 20px;
+    background-color: #1a2530;
+    color: #fff200;
+    font-weight: bold;
+}
+
+main{
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
+}
+
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#filter{
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff200;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .3s ease-in-out all;
+}
+
+#filter:hover{
+    background-color: #928b01;
+    transition: .3s ease-in-out all;
+}
+
+.add-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     margin: 40px 0;
+}
+
+#add{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(47, 255, 120);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .3s ease-in-out all;
+}
+
+#add:hover{
+    background-color: rgb(31, 152, 74);
+    transition: .3s ease-in-out all;
+}
+
+.add__title,.add__description{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.add__description{
+    width: 300px;
+}
+
+.todo-container{
+    min-width: 320px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.todo-table{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.todo__title{
+    width: 20%;
+}
+
+.todo__description{
+    width: 40%;
+}
+
+.todo__status{
+    width: 20%;
+}
+
+.status{
+    margin: 0 auto;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.todo__actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;;
+}
+
+.todo__delete,.todo__edit{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.todo__delete{
+    background-color: rgb(255, 50, 50);
+    transition: .3s ease-in-out all;
+}
+.todo__delete:hover{
+    background-color: rgb(164, 34, 34);
+    transition: .3s ease-in-out all;
+}
+
+.todo__edit{
+    background-color: rgb(0, 179, 255);
+    transition: .3s ease-in-out all;
+}
+
+.todo__edit:hover{
+    background-color: rgb(2, 114, 162);
+    transition: .3s ease-in-out all;
+}
+
+body{
+    position: relative;
+}
+
+.edit-form{
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;    
+}
+
+.edit-active{
+    top: 50%;
+    left: 50%;
+}
+
+.edit-form input{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#edit{
+    background-color: rgb(0, 179, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+}
+
+.back{
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(23, 23, 23,0.6);
+}
+
+.hidden{
+    top: -100%;
+}

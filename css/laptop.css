@@ -1,0 +1,19 @@
+.filter-form{
+    flex-direction: row;
+}
+
+.filter__title{
+    padding: 0 10px;
+}
+
+.filter-form input{
+    margin: 0 10px;
+}
+
+#filter{
+    margin: 0 10px;
+}
+
+.add-form{
+    flex-direction: row;
+}
