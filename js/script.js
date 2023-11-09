@@ -63,12 +63,12 @@ const fillTodo = function (todoHTML) {
         const deleteBtn = document.createElement('a');
         deleteBtn.classList.add('todo__delete');
         const svgDelete = document.createElement('img');
-        svgDelete.src = 'delete.svg';
+        svgDelete.src = 'img/delete.svg';
         deleteBtn.append(svgDelete);
         const editBtn = document.createElement('a');
         editBtn.classList.add('todo__edit');
         const svgEdit = document.createElement('img');
-        svgEdit.src = 'edit.svg';
+        svgEdit.src = 'img/edit.svg';
         editBtn.append(svgEdit);
 
         id.value = element.id;
